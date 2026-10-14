@@ -1,2 +1,21 @@
-# agent-skills
-personal repository for agent skills I value
+# Agent Skills
+
+Reusable instructions and standards for AI coding agents, maintained in one place for consistent use across repositories, tools, and workflows.
+
+## Skills
+
+| Skill | Purpose |
+|---|---|
+| [Karpathy–Manning–DTNorris Guidelines](skills/karpathy-manning-dtnorris-guidelines/SKILL.md) | Practical coding guidelines emphasizing simplicity, surgical changes, clear documentation, explicit assumptions, and verifiable results. |
+
+## Usage
+
+Skills are maintained here as canonical sources. Agents can reference them through repository `AGENTS.md` files, project instructions, or automated prompt generation.
+
+For reproducibility, prefer referencing a pinned commit rather than a moving branch.
+
+Task-specific requirements and safety constraints take precedence over general guidelines.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
