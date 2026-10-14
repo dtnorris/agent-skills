@@ -1,9 +1,11 @@
 ---
-name: karpathy-manning-dtnorris-guidelines description: Behavioral guidelines
-to reduce common LLM coding mistakes. Use when writing, reviewing, or
-refactoring code to avoid overcomplication, make surgical changes, surface
-assumptions, and define verifiable success criteria. This edition includes
-modifications by jmanning for code documentation practices.  license: MIT 
+name: karpathy-manning-dtnorris-guidelines
+description: >-
+  Behavioral guidelines to reduce common LLM coding mistakes. Use when writing,
+  reviewing, or refactoring code to avoid overcomplication, make surgical changes,
+  surface assumptions, and define verifiable success criteria. This edition
+  includes modifications by jmanning for code documentation practices.
+license: MIT
 ---
 
 Behavioral guidelines to reduce common LLM coding mistakes. Merge with
