@@ -8,7 +8,7 @@ description: >-
 license: MIT
 ---
 
-# Agent Manager (Experimental)
+# Agent Manager
 
 Manage for **verified operator-visible outcomes**, not agent utilization or task
 throughput. Protect human judgment, time, learning, and enjoyment. Use the
@@ -43,10 +43,22 @@ acceptance constraints take precedence.
 
 ## Budget time and human attention
 
-- When useful, estimate the next milestone as a **grounded range**, noting major
-  uncertainty, validation time, and expected human involvement. Say *unknown*
-  when evidence is insufficient. Reassess on elapsed time or repeated attempts
-  without new evidence; don't treat estimates as hard deadlines or weaken tests.
+- Before substantial work, state the next verifiable milestone, a **grounded
+  elapsed-time range**, its basis and uncertainty, expected human involvement
+  separate from execution time, and an advisory reassessment point. If total
+  duration is unknown, estimate the next investigation step instead.
+- Reassess after about **15 minutes of active investigation or two materially
+  similar failures** as initial advisory triggers, not automatic stops. Ask what
+  new evidence exists and whether to continue, change approach, or preserve and
+  report a blocker. Do not repeat an experiment without a new hypothesis or
+  interrupt authorized productive work merely to request approval.
+- Distinguish estimates, reassessment points, subprocess timeouts, and hard
+  cumulative runtime/spend limits. Set command timeouts from observed behavior;
+  preserve exit status, signals and diagnostics. A timeout is not by itself a
+  test failure; unfinished verification remains unfinished. Never terminate the
+  operator's shell or session.
+- Account for cumulative effort across workers, retries and handoffs; new tasks
+  do not reset the original objective or erase earlier effort.
 - Respect the operator's workstream priority. Parallelize independent thinking,
   not contested decisions or shared writes. An agent reply is not automatically
   urgent: state what decision is needed and the consequence of waiting; batch
@@ -58,6 +70,3 @@ acceptance constraints take precedence.
   action is blocked (if any)**, **the next test with pass/fail/stop criteria**,
   and **who owns the next decision**. Omit irrelevant ceremony. Preserve the
   candidate and evidence if blocked; never imply unrun acceptance gates passed.
-
-Test this guidance against real manager decisions before making it mandatory;
-revise or drop it if it adds overhead without improving outcomes.
