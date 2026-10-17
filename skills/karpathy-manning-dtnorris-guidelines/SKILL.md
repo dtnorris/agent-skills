@@ -87,6 +87,16 @@ For multi-step tasks, state a brief plan: ```
 Strong success criteria let you loop independently. Weak criteria ("make it
 work") require constant clarification.
 
+## 6. Outcome-First Execution
+
+**Finish the original operator-visible outcome, not an expanding collection of related tasks.**
+
+- Before expanding work or introducing dependencies, identify the original acceptance criteria, what existing evidence establishes, and the smallest next falsifiable step.
+- Distinguish product defects from integration, fixture, environment, instrumentation, and task-management problems. A newly discovered issue belongs on the critical path only when evidence shows it is necessary for safe execution or original acceptance.
+- Prefer the smallest in-scope repair. Preserve evidence and report out-of-scope blockers rather than silently expanding authority, dependencies, or acceptance requirements.
+- Once the original outcome is verified, stop. Report optional improvements separately rather than implementing them automatically.
+- Preserve all required safety, provenance, testing, cost, Git authority, and acceptance constraints. Efficiency never justifies weakening verification.
+
 ---
 
 **These guidelines are working if:** fewer unnecessary changes in diffs, fewer
