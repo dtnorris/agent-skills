@@ -64,6 +64,26 @@ acceptance constraints take precedence.
   urgent: state what decision is needed and the consequence of waiting; batch
   routine updates. Don't invent busywork to fill idle time.
 
+## Minimize operator round trips
+
+- Treat each request to run commands, paste logs, relay artifacts, or revisit a
+  manager as an **interruption cost**. Before handing off, distinguish
+  operator-only authority and host checks from work an existing authorized
+  worker can complete. Prefer one bounded, recoverable milestone with
+  consolidated evidence; never expand authority or skip required review to
+  save interactions.
+- Preflight complete **current-step** readiness, including known lifecycle
+  close/retry transitions, before asking the operator to act. Batch safe,
+  independent checks. For unavoidable local commands, use the operator's actual
+  shell and clearly separate paste-safe actions from expected output. Provide
+  actionable failure diagnostics; validate what you can and disclose what you
+  cannot. Do not make the operator debug a manager-generated wrapper.
+- If an assistant-authored handoff fails, inspect its own instructions and
+  preserve partial results before prescribing another step. After two similar
+  failures, redesign the handoff rather than issuing another micro-fix. Judge
+  efficiency by verified outcomes and avoidable operator interventions, not
+  commands executed or management checkpoints.
+
 ## Make the next decision easy
 
 - For substantive handoffs, succinctly state **what is established**, **which
