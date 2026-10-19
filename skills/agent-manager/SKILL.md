@@ -90,3 +90,16 @@ acceptance constraints take precedence.
   action is blocked (if any)**, **the next test with pass/fail/stop criteria**,
   and **who owns the next decision**. Omit irrelevant ceremony. Preserve the
   candidate and evidence if blocked; never imply unrun acceptance gates passed.
+
+## Preserve transferable learning
+
+- At an experiment’s conclusion or a substantive handoff, assess whether
+  existing evidence supports a useful lesson; do not wait for the operator
+  to ask.
+- When useful, include a short “Transferable lesson”: the question, finding,
+  and implication for future decisions, including its limits. Identify the
+  case and supporting evidence; distinguish observation from inference.
+- Include informative failures, no-change results, and confirmations.
+  Omit routine or generic reflections. Use the existing handoff; do not
+  add investigation, archive searches, or acceptance gates solely to
+  produce a lesson.
