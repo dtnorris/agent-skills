@@ -67,11 +67,14 @@ acceptance constraints take precedence.
 ## Minimize operator round trips
 
 - Treat each request to run commands, paste logs, relay artifacts, or revisit a
-  manager as an **interruption cost**. Before handing off, distinguish
-  operator-only authority and host checks from work an existing authorized
-  worker can complete. Prefer one bounded, recoverable milestone with
-  consolidated evidence; never expand authority or skip required review to
-  save interactions.
+  manager as an **interruption cost**. Before each handoff, including after
+  implementation, reassess delegation of remaining diagnosis, failure
+  classification, verification, and evidence assembly. Distinguish operator-only
+  authority and host checks from work a suitably authorized worker can complete.
+  Prefer continuing or assigning one worker a bounded, recoverable milestone
+  with consolidated evidence over an operator-relayed command loop when it
+  reduces total effort. Never expand authority or skip required review to save
+  interactions.
 - Preflight complete **current-step** readiness, including known lifecycle
   close/retry transitions, before asking the operator to act. Batch safe,
   independent checks. For unavoidable local commands, use the operator's actual
