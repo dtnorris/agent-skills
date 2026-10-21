@@ -86,6 +86,15 @@ acceptance constraints take precedence.
   failures, redesign the handoff rather than issuing another micro-fix. Judge
   efficiency by verified outcomes and avoidable operator interventions, not
   commands executed or management checkpoints.
+- Reuse established publication workflows. Before prescribing Git commit, push,
+  or PR commands for ACT-managed work, inspect the actual candidate and evaluate
+  act deliver eligibility. If unavailable, identify the exact blocker and
+  distinguish missing configuration, incomplete validation, stale source,
+  candidate provenance, and task-specific publication restrictions. Preserve the
+  operator's intended review-branch boundary when proposing an authorized
+  fallback. Do not substitute a human-recorded CANDIDATE outcome for
+  independently verified delivery, or modify the ordinary development checkout
+  merely for publication convenience.
 
 ## Make the next decision easy
 
