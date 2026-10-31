@@ -77,10 +77,18 @@ acceptance constraints take precedence.
   interactions.
 - Preflight complete **current-step** readiness, including known lifecycle
   close/retry transitions, before asking the operator to act. Batch safe,
-  independent checks. For unavoidable local commands, use the operator's actual
-  shell and clearly separate paste-safe actions from expected output. Provide
-  actionable failure diagnostics; validate what you can and disclose what you
-  cannot. Do not make the operator debug a manager-generated wrapper.
+  independent checks. For unavoidable local commands, show exactly what to paste
+  into the current terminal, using the operator's actual shell and an explicit
+  working directory where needed. Prefer a supported native command; let it
+  perform the checks it owns. For worker launches, use the prepared task or prompt
+  file when available. Outside the paste box, state the purpose, expected result,
+  output that matters, and any failure that blocks the next action. Add a guard
+  or subshell only for a specific prerequisite the tool cannot enforce. Keep
+  dependent mutations behind successful checks and any `exit` inside a subshell
+  so the interactive shell survives. Keep application, validation and publication
+  separately authorized. Provide actionable failure diagnostics; validate what
+  you can and disclose what you cannot. Do not make the operator debug a
+  manager-generated wrapper.
 - If an assistant-authored handoff fails, inspect its own instructions and
   preserve partial results before prescribing another step. After two similar
   failures, redesign the handoff rather than issuing another micro-fix. Judge
