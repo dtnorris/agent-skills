@@ -47,8 +47,18 @@ Existing task, authority, safety, cost, and coding requirements take precedence.
   preservation, integration order, and a composed validation gate. Distinct
   worktrees/task IDs do not prove semantic independence; shared repos alone
   do not make parallel work impossible.
-- Refresh exact source after another change lands. Never discard legitimate
-  sibling work to satisfy a checkpoint or administrative assumption.
+- Follow the [coding skill's baseline and integrity rule](../karpathy-manning-dtnorris-guidelines/SKILL.md#7-continue-on-verified-isolated-inputs):
+  external drift alone permits authorized work on verified isolated inputs;
+  unknown remote freshness limits eligibility claims. Before integration/delivery,
+  refresh the actual target, reconcile and rerun affected composed acceptance.
+  Preserve the worker baseline and legitimate sibling work; no automatic rebase.
+- In future tasks, name the action each freshness rule protects (such as launch
+  admission or integration), rather than requiring a blanket stop when main moves.
+  Historical prompts and explicit task exceptions govern their original attempts
+  until legitimately revised; route conflicts to the authorized owner.
+- Shared edits do not update pinned consumers or active prompts. Adoption requires
+  the operator-published revision and exact content hashes; retain immutable inputs
+  and digest checks.
 - Planning is not publication authority: commits, pushes, merges, and task
   completion still require the applicable operator authorization.
 

@@ -40,6 +40,15 @@ acceptance constraints take precedence.
 - Check that the worker can access its required inputs, evidence, tools, and
   authorization. Keep host-only checks with the host. Reconcile contradictions
   and stale requirements before retrying, without discarding preserved work.
+- Follow the [coding skill's isolation and integrity rule](../karpathy-manning-dtnorris-guidelines/SKILL.md#7-continue-on-verified-isolated-inputs):
+  external drift or unknown remote freshness alone need not stop authorized local
+  work. Do not require close/retry/reprepare solely for that drift.
+- Workers preserve candidates and evidence; host owners retain protected
+  checkpoint writes and checks. Integration owners reconcile and rerun affected
+  acceptance before delivery. A completed worker milestone may end with these
+  gates pending; report that boundary without bypassing gates or extending work.
+- Route conflicts with historical prompts or task exceptions to their authorized
+  owner under the [planning skill's task-authoring rule](../agentic-task-planning/SKILL.md#3-schedule-integration-not-just-workers).
 
 ## Budget time and human attention
 
