@@ -103,6 +103,11 @@ work") require constant clarification.
   HEAD, index, source bytes, ownership and bound input identities. Preserve the
   exact starting baseline and unrelated changes. A branch name or clean worktree
   alone does not prove isolation; validate live mutable shared inputs separately.
+- Before applying a patch or handoff, verify and disclose the actual target
+  checkout and current branch; do not infer either from the invoking directory.
+  Use an explicitly selected feature/review branch unless the operator explicitly
+  chooses another branch, including main; branch creation or switching still
+  requires authorization.
 - Once admitted to verified isolated work with stable bound inputs, continue
   authorized local implementation, diagnosis, testing and candidate preservation
   when remote main, a sibling ordinary checkout's local main (even without a
