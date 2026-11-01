@@ -97,6 +97,29 @@ work") require constant clarification.
 - Once the original outcome is verified, stop. Report optional improvements separately rather than implementing them automatically.
 - Preserve all required safety, provenance, testing, cost, Git authority, and acceptance constraints. Efficiency never justifies weakening verification.
 
+## 7. Continue on Verified Isolated Inputs
+
+- Before editing, verify the authorized execution root/realpath, origin, actual
+  HEAD, index, source bytes, ownership and bound input identities. Preserve the
+  exact starting baseline and unrelated changes. A branch name or clean worktree
+  alone does not prove isolation; validate live mutable shared inputs separately.
+- Once admitted to verified isolated work with stable bound inputs, continue
+  authorized local implementation, diagnosis, testing and candidate preservation
+  when remote main, a sibling ordinary checkout's local main (even without a
+  push), or an unrelated remote-tracking ref advances. These observations do not
+  change the worker's execution baseline. If final remote lookup is unavailable,
+  report freshness as unknown and continue work supported by verified local inputs.
+- Expected worker edits are normal. Inspect unexplained changes to the worker's
+  HEAD, index, source bytes, origin, ownership or bound inputs and stop affected
+  operations. Missing required inputs, real safety/semantic dependencies, revoked
+  authority and explicit task-specific stops still block dependent operations.
+- Preserve the complete candidate, original base, hashes, focused evidence and
+  observed drift or lookup limits. Do not silently fetch, rebase, reset or merge.
+  Before integration/delivery, reconcile against the actual target and rerun
+  affected composed acceptance; local completion proves neither current-source
+  eligibility nor final acceptance/publication. Keep host-only gates with their
+  owner and finish at the authorized milestone when complete.
+
 ---
 
 **These guidelines are working if:** fewer unnecessary changes in diffs, fewer
