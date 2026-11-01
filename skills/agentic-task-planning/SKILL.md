@@ -47,28 +47,18 @@ Existing task, authority, safety, cost, and coding requirements take precedence.
   preservation, integration order, and a composed validation gate. Distinct
   worktrees/task IDs do not prove semantic independence; shared repos alone
   do not make parallel work impossible.
-- After another change lands, refresh the actual integration target for
-  reconciliation before integration, not the worker's bound execution baseline.
-  With verified workspace isolation and stable bound inputs, external remote
-  main, a sibling checkout's local main or an unrelated remote-tracking ref
-  movement alone permits authorized local work through candidate preservation.
-  Unknown final remote freshness limits eligibility claims, not work supported
-  by verified local inputs. Never discard legitimate sibling work to satisfy
-  a checkpoint or administrative assumption.
-- Apply the [coding skill's baseline and integrity rule](../karpathy-manning-dtnorris-guidelines/SKILL.md#7-continue-on-verified-isolated-inputs).
-  Unexplained execution-input changes, uncertain ownership, missing required
-  inputs, unvalidated live shared inputs and task-specific restrictions still
-  block affected operations. Preserve the original base, candidate hashes,
-  focused evidence and drift; reconcile and rerun affected composed acceptance
-  before integration/delivery. No automatic rebase or publication is authorized.
-- In future task definitions, name the phase/action each freshness rule protects
-  (such as launch admission or integration); avoid blanket stops whenever main
-  moves. Existing explicit task exceptions and historical prompts govern their
-  original attempts until legitimately revised. Report conflicts for bounded
-  correction by the authorized owner; do not silently override or rewrite them.
-  Shared skill edits do not update pinned consumers or active prompts: adoption
-  requires the operator-published revision and exact content hashes, retaining
-  immutable inputs and digest checks.
+- Follow the [coding skill's baseline and integrity rule](../karpathy-manning-dtnorris-guidelines/SKILL.md#7-continue-on-verified-isolated-inputs):
+  external drift alone permits authorized work on verified isolated inputs;
+  unknown remote freshness limits eligibility claims. Before integration/delivery,
+  refresh the actual target, reconcile and rerun affected composed acceptance.
+  Preserve the worker baseline and legitimate sibling work; no automatic rebase.
+- In future tasks, name the action each freshness rule protects (such as launch
+  admission or integration), rather than requiring a blanket stop when main moves.
+  Historical prompts and explicit task exceptions govern their original attempts
+  until legitimately revised; route conflicts to the authorized owner.
+- Shared edits do not update pinned consumers or active prompts. Adoption requires
+  the operator-published revision and exact content hashes; retain immutable inputs
+  and digest checks.
 - Planning is not publication authority: commits, pushes, merges, and task
   completion still require the applicable operator authorization.
 

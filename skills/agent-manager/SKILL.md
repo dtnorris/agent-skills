@@ -40,25 +40,15 @@ acceptance constraints take precedence.
 - Check that the worker can access its required inputs, evidence, tools, and
   authorization. Keep host-only checks with the host. Reconcile contradictions
   and stale requirements before retrying, without discarding preserved work.
-- Once admitted under the [coding skill's isolation and integrity rule](../karpathy-manning-dtnorris-guidelines/SKILL.md#7-continue-on-verified-isolated-inputs),
-  keep authorized local work moving on stable bound inputs when remote main,
-  a sibling ordinary checkout's local main or an unrelated remote-tracking ref
-  advances. Unavailable final remote lookup leaves freshness unknown; it alone
-  does not block supported local work. Unexplained workspace/input mutation,
-  uncertain ownership, missing required inputs, real safety/semantic dependencies,
-  revoked authority and task-specific restrictions still block affected actions.
-- The worker preserves the complete baseline-bound candidate, original base and
-  hashes, focused evidence and observed drift/lookup limits through supported
-  checkpoint operations. Keep protected checkpoint record/verify/gate writes and
-  other host-only checks with their owner. Do not require close/retry/reprepare
-  solely for external drift to finish local work. The integration owner reconciles
-  against the actual target and reruns affected composed acceptance before
-  integration/delivery; no automatic rebase, final acceptance or publication follows.
-- A completed authorized candidate milestone may end the worker assignment with
-  host registration or integration pending. Report that boundary honestly; do not
-  force endless work or bypass gates. Preserve historical prompts and explicit
-  task exceptions; route conflicts to the authorized owner for bounded correction
-  under the [planning skill's task-authoring rule](../agentic-task-planning/SKILL.md#3-schedule-integration-not-just-workers).
+- Follow the [coding skill's isolation and integrity rule](../karpathy-manning-dtnorris-guidelines/SKILL.md#7-continue-on-verified-isolated-inputs):
+  external drift or unknown remote freshness alone need not stop authorized local
+  work. Do not require close/retry/reprepare solely for that drift.
+- Workers preserve candidates and evidence; host owners retain protected
+  checkpoint writes and checks. Integration owners reconcile and rerun affected
+  acceptance before delivery. A completed worker milestone may end with these
+  gates pending; report that boundary without bypassing gates or extending work.
+- Route conflicts with historical prompts or task exceptions to their authorized
+  owner under the [planning skill's task-authoring rule](../agentic-task-planning/SKILL.md#3-schedule-integration-not-just-workers).
 
 ## Budget time and human attention
 
